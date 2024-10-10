@@ -1,3 +1,17 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": [
+    "prettier",
+    "next/typescript",
+    "next/core-web-vitals"
+  ],
+  "plugins": [
+    "unused-imports",
+    "import"
+  ],
+  "rules": {
+    "unused-imports/no-unused-imports": "error",
+    "import/order": ["error", {
+      "newlines-between": "always"
+    }]
+  }
 }
