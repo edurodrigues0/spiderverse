@@ -1,20 +1,27 @@
-import Image from "next/image";
+import styles from "./page.module.scss";
 
-export default function Home() {
+import { IHero } from "@/interfaces/heroes";
+import { HeroesList } from "@/components/HeroesList";
+import { Header } from "@/components/Header";
+
+async function fetchHeroes(): Promise<{ data: IHero[] }> {
+  const res = await fetch("http://localhost:3000/api/heroes");
+
+  if (!res.ok) {
+    throw new Error("Failed to request heroes list");
+  }
+
+  return res.json();
+}
+
+export default async function Home() {
+  const heroes = await fetchHeroes();
   return (
     <>
-      <header>
-        <Image
-          src="/icons/menu.svg"
-          alt="Opções de menu"
-          width={36}
-          height={25}
-        />
-
-        <Image src="/spider-logo.svg" alt="Spiderman" width={260} height={70} />
-
-        <Image src="/icons/user.svg" alt="Login" width={36} height={36} />
-      </header>
+      <Header />
+      <main className={styles.main}>
+        <HeroesList heroes={heroes.data} />
+      </main>
     </>
   );
 }

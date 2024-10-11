@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+}
+
+.details {
+  flex: 1;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.carousel {
+  flex: 1;
+  width: 100%;
+}
+
+.wrapper {
+  height: 130vh;
+  position: relative;
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
