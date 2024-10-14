@@ -11,6 +11,8 @@
 .carousel {
   flex: 1;
   width: 100%;
+  position: relative;
+  left: -10%;
 }
 
 .wrapper {
@@ -20,5 +22,19 @@
 
   &:active {
     cursor: grabbing;
+  }
+}
+
+.spider {
+  height: 100%;
+  position: absolute;
+  width: 500px;
+  left: 0;
+
+  img {
+    height: 100%;
+    object-fit: contain;
+    object-position: center right;
+    width: 100%;
   }
 }

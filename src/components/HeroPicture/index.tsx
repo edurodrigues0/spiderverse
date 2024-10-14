@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+
 import ImageSpiderMan616 from "@public/spiders/spider-man-616.png";
 import ImageSpiderWoman65 from "@public/spiders/mulher-aranha-65.png";
 import ImageSpiderMan1610 from "@public/spiders/spider-man-1610.png";
