@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+![image](https://private-user-images.githubusercontent.com/55519539/245516716-2247f062-26e9-4881-a9c8-0fcb17206daa.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjkxMDU3MDEsIm5iZiI6MTcyOTEwNTQwMSwicGF0aCI6Ii81NTUxOTUzOS8yNDU1MTY3MTYtMjI0N2YwNjItMjZlOS00ODgxLWE5YzgtMGZjYjE3MjA2ZGFhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDE2VDE5MDMyMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPThkN2I0NzE0ZmViYzE0NDBmM2FkZjE0N2ZkMjkxOTdhZjkxZGZjMDNiODE2ZTNkZTFlMjA2MjU4ZWRiOGJiOGYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Q03lNoo1-O2x9LesnuS1R7WORo4c6QIiVxoKylBRoc8)
 
-## Getting Started
+# Projeto Spider-Verse
 
-First, run the development server:
+Este é o repositório do projeto Spider-Verse, desenvolvido em parceria com a DIO. O projeto consiste em uma aplicação interativa inspirada no universo do Homem-Aranha, usando as principais stacks front-end: React, Next.js 14, a biblioteca Framer Motion, Sass e TypeScript para criar um projeto visual incrível e de alta performance.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[245500314-6ea3a467-ca98-4b3d-aa16-855db8a5fdb0.webm](https://github.com/user-attachments/assets/1413ba0b-4e5f-4eed-876b-1b43fe05dbfc)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Stack utilizada
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Front-end:** React, Next 14, Typescript, SCSS, Framer Motion
 
-## Learn More
+**Back-end:** JSON Server
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Instruções de execução
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Siga as instruções abaixo para rodar o projeto em seu ambiente local:
+  1. Certifique-se de ter o Node.js instalado em seu computador. Você pode baixar a versão mais recente do Node.js em https://nodejs.org.
+  
+  2. Clone este repositório em seu computador ou faça o download do código fonte.
+  
+  3. Abra o terminal e navegue até o diretório raiz do projeto.
+  
+  4. Instale as dependências do projeto executando o seguinte comando:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+  ```bash
+    npm install
+  ```
 
-## Deploy on Vercel
+  5. Após a conclusão da instalação das dependências, inicie o servidor de desenvolvimento local com o comando:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  ```bash
+    npm run dev:server
+  ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  6. O servidor local será iniciado e você poderá acessar o projeto no seu navegador através do seguinte endereço:
+
+  ```bash
+    http://localhost:3000
+  ```
+
+Caso a porta 3000 estiver em uso, automaticamente o Next.js irá subir na próxima porta livre da máquina.
+
+Se deseja alterar a porta padrão na qual a aplicação tentará subir, você pode modificar a porta no arquivo next.config.js.
+
+Agora você está pronto para explorar o projeto em seu ambiente local!
